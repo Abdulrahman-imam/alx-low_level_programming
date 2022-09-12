@@ -3,9 +3,9 @@
 
 /**
  * main - the function main() prints all the combinations of 3 different digits in ascending order separated by a comma.
- *        
+ *
  * Return: Always 0.
-*/
+ */
 int main(void)
 {
 	int n1;
@@ -24,12 +24,14 @@ int main(void)
 
 				if (n1 == 7 && n2 == 8 && n3 == 9)
 					continue;
-				
+
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }

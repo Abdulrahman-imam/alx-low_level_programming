@@ -6,7 +6,7 @@
  * main - the function main() Prints all the alphabet in lowercase and uppercase.
  *
  * Return: Always 0.
-*/
+ */
 int main(void)
 {
 	char c;

@@ -4,8 +4,8 @@
 /**
  * main - the function main() prints all the alphabet in reverse
  *
- * Return: Always 0 
-*/
+ * Return: Always 0
+ */
 int main(void)
 {
 	char c;

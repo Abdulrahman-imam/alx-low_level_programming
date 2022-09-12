@@ -3,27 +3,30 @@
 
 /**
  * main - the function main() Prints all the combinations of 2 different digits in ascending order, separated by a comma.
- *        
- * Return: Always 0 
-*/
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
-	int n1:
-    int n2;
+	int i;
+	int n = 0;
+	int k = 49;
 
-	for (n1 = 0; n1 < 9; n1++)
+	for (i = 48; i <= 56; ++i)
 	{
-		for (n2 = n1 + 1; n2 < 10; n2++)
+		for (; k <= 57; ++k)
 		{
-			putchar((n1 % 10) + '0');
-			putchar((n2 % 10) + '0');
 
-			if (n1 == 8 && n2 == 9)
-				continue;
-			
-			putchar(',');
-			putchar(' ');
+			putchar(i);
+			putchar(k);
+			if (i != 56 || k != 57)
+			{
+				putchar(44);
+				putchar(32);
+			}
 		}
+		n++;
+		k = 49 + n;
 	}
 	putchar('\n');
 	return (0);

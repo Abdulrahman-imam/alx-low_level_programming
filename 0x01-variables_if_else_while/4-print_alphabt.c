@@ -5,7 +5,7 @@
  * main - the function main() Prints all the other alphabets in lowercase except for  only e, q.
  *
  * Return: Always 0.
-*/
+ */
 int main(void)
 {
 	char c;

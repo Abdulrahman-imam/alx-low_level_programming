@@ -3,10 +3,10 @@
 
 /**
  * main - main() prints all the combinations of 2-digit from 0-99 separated by a comma then followed by a space.
- *        
+ *
  *
  * Return: Always 0.
-*/
+ */
 int main(void)
 {
 	int n1;
@@ -29,6 +29,8 @@ int main(void)
 			putchar(' ');
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }

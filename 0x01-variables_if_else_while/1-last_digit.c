@@ -4,10 +4,10 @@
 
 /**
  * main-Prints the last digit of the generated random number and check whether the random number greater than 5, less than 6, or 0.
- *        
+ *
  *
  * Return: Always 0.
-*/
+ */
 int main(void)
 {
 	int n;

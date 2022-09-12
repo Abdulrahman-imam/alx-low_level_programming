@@ -8,9 +8,11 @@
 int main(void)
 {
 	int start = 1;
-	int end = 58;
+	int end = 59;
 
-	write(start, "and that piece of art is useful\" - Dora Korpar, 2015-10-19", end);
+	write(start,
+	      "and that piece of art is useful\" - Dora Korpar, 2015-10-19",
+		   end);
 
 	return (1);
 }

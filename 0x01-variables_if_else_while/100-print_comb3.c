@@ -28,6 +28,8 @@ int main(void)
 		n++;
 		k = 49 + n;
 	}
+	
 	putchar('\n');
+
 	return (0);
 }

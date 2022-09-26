@@ -1,29 +1,61 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strstr - first occurrence of the substring needle in the string haystack
- * @haystack: main str to be examined
- * @needle: searched in haystack
- * Return: return 0
- **/
+ * _strstr - function
+ * @s: first string
+ * @accept: second string
+ * Return: unsigned int
+ */
 
-char  *_strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
-	char *str1, *str2; 
+	unsigned int i = 0, j = 0, stop1 = 1, mtp = 1, len = 0, finish = 0;
+	char *tmp, *src, *dst;
 
-	while (*haystack != '\0')
+	while (*(haystack + i))
 	{
-		str1 = haystack;
-		str2 = needle;
-
-		while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
-		{
-			haystack++;
-			str2++;
-		}
-		if (*str2 == '\0')
-			return (str1);
-		haystack = str1 + 1;
+		*(src + i) = *(haystack + i);
+		i++;
 	}
-	return (0);
+	while (*(needle + j))
+	{
+		dst[j] = needle[j];
+		j++;
+	}
+
+	while (needle[len])
+		len++;
+	printf("lenght of needle %d \n \n", len);
+	for (i = 0; *(src + i); i++)
+	{
+		stop1 = 0;
+		for (j = 0; j < len; j++)
+		{
+			if (src[i] == dst[j])
+			{
+				mtp++;
+				stop1 *= 1;
+			}else
+				stop1 *= 0;
+			if (stop1 == 0)
+				break;
+			else
+				if (mtp == len)
+				{
+					finish = 1;
+					tmp = src + j;
+				}
+			printf("i: %d , j: %d, mtp: %d, stop: %d, finish: %d \n", i, j, mtp ,stop1, finish);
+		}
+		if(stop1 == 0)
+			break;
+		if (j > len - i)
+			break;
+		if ( finish == 1)
+		{
+			break;
+		}
+	}
+	return (tmp);
 }
